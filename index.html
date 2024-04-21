@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>Dynesis QA</title>
+
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preload" href="css/qa.css" as="style" />
+    <link
+      rel="preload"
+      href="https://www.w3schools.com/w3css/4/w3.css"
+      as="style"
+    />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/qa.css" />
+  </head>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="js/qa.js"></script>
+
+  <body>
+    <section
+      id="qa-start"
+      class="qa-section w3-center w3-content qa-panel roundcorners flex-col"
+      style="background-image: url('img/qa0_bg.png')"
+    >
+      <div id="qa-1-container">
+        <div id="qa-header">
+          <h1>Try the Magic. Pick a Service.</h1>
+        </div>
+      </div>
+      <nav class="w3-bar" id="nav-bar">
+        <button
+          id="btnMessaging"
+          class="qa-light-gray w3-button w3-bar-item w3-hover-grey roundcorners qa-3buttons"
+        >
+          <span>Messaging</span>
+        </button>
+        <button
+          id="btnBranding"
+          class="qa-light-red w3-button w3-bar-item w3-hover-red roundcorners qa-3buttons"
+        >
+          <span>Branding</span>
+        </button>
+        <button
+          id="btnUX"
+          class="qa-light-blue w3-button w3-bar-item w3-hover-blue roundcorners qa-3buttons"
+        >
+          <span>UX</span>
+        </button>
+      </nav>
+    </section>
+    <section
+      id="qa-letsgo"
+      class="qa-section w3-center w3-content qa-panel roundcorners flex-col qa-lightest-gray"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div id="qa-pre-container" class="flex-col" style="gap: 32px">
+          <div id="qa-pre">
+            <h2>Answer 3 Questions and Experience the Magic Yourself</h2>
+          </div>
+          <div
+            id="letgo-features"
+            style="display: flex; flex-direction: column; gap: 32px"
+          >
+            <div id="qa-pre-list" class="flex-row">
+              <img style="height: 96px; width: 96px" src="img/cycle.png" />
+              <div class="qa-pre-listItem">
+                <h4 style="text-transform: capitalize; letter-spacing: 0.25px">
+                  What you will receive
+                </h4>
+                <p>
+                  You will get 1 free cycle of a
+                  <strong>set of messages, visual elements</strong> or a
+                  <strong>screen design.</strong>
+                </p>
+              </div>
+            </div>
+            <div id="qa-quality-toggle" class="flex-row">
+              <img style="height: 96px; width: 96px" src="img/quality.png" />
+              <div class="qa-pre-listItem">
+                <h4 style="text-transform: capitalize">
+                  How to increase quality
+                </h4>
+                <p>
+                  The <strong>more accurate</strong> your answers are, the
+                  <strong>better the results</strong> of the output will be.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="qa-letsgo-wrapper">
+          <button
+            id="btnLetsgo"
+            class="w3-button primary-button w3-bar-item roundcorners"
+          >
+            <span style="margin: auto 0" tabindex="1" href="">Let's Go!</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--messaging-->
+    <section
+      id="qa-messaging-1"
+      class="qa-section qa-panel qa-dark-gray roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 25%">&nbsp;</div>
+            </div>
+            <div class="progress-text">1 of 4</div>
+          </div>
+          <h2>Let's Create Your Messaging Story.</h2>
+        </div>
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col">
+            <div class="question h2-lower-lineHeight">
+              <h3>Who is Your Customer?</h3>
+              <p>
+                Elaborate around their <strong>needs</strong> and socio
+                <strong>demographic</strong> attributes.
+              </p>
+            </div>
+            <div class="response">
+              <form>
+                <textarea
+                  class=""
+                  id="qa-messaging-input-1"
+                  cols="30"
+                  rows="10"
+                  placeholder="Emma, 28, runner. Sustainability-minded, seeks personalized running gear. Nure's modular shoes, subscription model, and metaverse integration resonate. Empowering individuality, fostering community, and promoting a healthier planet."
+                  aria-placeholder="Emma, 28, runner. 
+                            Sustainability-minded, seeks personalized running gear. Nure's modular shoes, subscription model, 
+                            and metaverse integration resonate. Empowering individuality, fostering community, and promoting a 
+                            healthier planet."
+                ></textarea>
+              </form>
+              <button
+                class="next-button w3-bar-item btn-question1 roundcorners"
+                role="tab"
+                href="#"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="qa-messaging-2"
+      class="qa-section qa-panel qa-dark-gray roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 50%">&nbsp;</div>
+            </div>
+            <span class="progress-text">2 of 4</span>
+          </div>
+          <h2>Let's Create Your Messaging Story.</h2>
+        </div>
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col">
+            <div class="question h2-lower-lineHeight">
+              <h3>What Problem Do You Solve?</h3>
+              <p>
+                Let us know how your <strong>customer benefits</strong> from
+                your product or service.
+              </p>
+            </div>
+            <div class="response">
+              <form>
+                <textarea
+                  class=""
+                  id="qa-messaging-input-2"
+                  cols="30"
+                  rows="10"
+                  placeholder="We solve the challenge of finding sustainable, personalized running gear. We offer modular shoes, a subscription model, and metaverse integration, empowering individuals like Emma to express themselves and contribute to a healthier planet."
+                  aria-placeholder="We solve the challenge of finding sustainable, personalized running gear. We offer modular shoes, a subscription model, and metaverse integration, empowering individuals like Emma to express themselves and contribute to a healthier planet."
+                ></textarea>
+              </form>
+              <button
+                class="next-button w3-bar-item btn-question2 roundcorners"
+                style="height: 31px"
+                role="tab"
+                href="#"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="qa-messaging-3"
+      class="qa-section qa-panel qa-dark-gray roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 75%">&nbsp;</div>
+            </div>
+            <span class="progress-text">3 of 4</span>
+          </div>
+          <h2>Let's Create Your Messaging Story.</h2>
+        </div>
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col">
+            <div class="question h2-lower-lineHeight">
+              <h3>Why Would One Choose You?</h3>
+              <p>
+                Talk a bit about what makes you <strong>different</strong> from
+                others.
+              </p>
+            </div>
+            <div class="response">
+              <form>
+                <textarea
+                  class=""
+                  id="qa-messaging-input-3"
+                  cols="30"
+                  rows="10"
+                  placeholder="We surpass On, Nike, and Adidas with sustainable, customizable gear and metaverse connectivity. Our modular shoes, subscriptions, and sustainability focus offer runners like Emma Runner unmatched personalization, community, and environmental impact."
+                  aria-placeholder="We surpass On, Nike, and Adidas with sustainable, customizable gear and metaverse connectivity. Our modular shoes, subscriptions, and sustainability focus offer runners like Emma Runner unmatched personalization, community, and environmental impact."
+                ></textarea>
+              </form>
+              <button
+                class="next-button w3-bar-item btn-question3 roundcorners"
+                style="height: 31px"
+                role="tab"
+                href="#"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--branding-->
+    <section
+      id="qa-branding-1"
+      class="qa-section qa-panel qa-dark-red roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 25%">&nbsp;</div>
+            </div>
+            <div class="progress-text">1 of 4</div>
+          </div>
+          <h2>Let's Create Your Branding Story.</h2>
+        </div>
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col">
+            <div class="question h2-lower-lineHeight">
+              <h3>Who is Your Customer?</h3>
+              <p>
+                Elaborate around their <strong>needs</strong> and socio
+                <strong>demographic</strong>
+                attributes.
+              </p>
+            </div>
+            <div class="response">
+              <form>
+                <textarea
+                  class=""
+                  id="qa-branding-input-1"
+                  cols="30"
+                  rows="10"
+                  placeholder="Emma, 28, runner. Sustainability-minded, seeks personalized running gear. Nure's modular shoes, subscription model, and metaverse integration resonate. Empowering individuality, fostering community, and promoting a healthier planet."
+                  aria-placeholder="Emma, 28, runner. Sustainability-minded, seeks personalized running gear. Nure's modular shoes, subscription model, and metaverse integration resonate. Empowering individuality, fostering community, and promoting a healthier planet."
+                ></textarea>
+              </form>
+              <button
+                class="next-button w3-bar-item btn-question1 roundcorners"
+                style="height: 31px"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="qa-branding-2"
+      class="qa-section qa-panel qa-dark-red roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 50%">&nbsp;</div>
+            </div>
+            <div class="progress-text">2 of 4</div>
+          </div>
+          <h2>Let's Create Your Branding Story.</h2>
+        </div>
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col">
+            <div class="question h2-lower-lineHeight">
+              <h3>What Is Your Product?</h3>
+              <p>
+                Let us know what <strong>product</strong> or
+                <strong>service</strong> you are offering and
+                <strong>how it works</strong>.
+              </p>
+            </div>
+            <div class="response">
+              <form>
+                <textarea
+                  class=""
+                  id="qa-branding-input-2"
+                  cols="30"
+                  rows="10"
+                  placeholder="Our modular running shoes, equipped with metaverse connectivity, revolutionize the running experience. With customizable features and sustainable materials, our product offers runners like Emma Runner unparalleled comfort, style, and environmental consciousness."
+                  aria-placeholder="Our modular running shoes, equipped with metaverse connectivity, revolutionize the running experience. With customizable features and sustainable materials, our product offers runners like Emma Runner unparalleled comfort, style, and environmental consciousness."
+                ></textarea>
+              </form>
+              <button
+                class="next-button w3-bar-item btn-question2 roundcorners"
+                style="height: 31px"
+                role="tab"
+                href="#"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="qa-branding-3"
+      class="qa-section qa-panel qa-dark-red roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 75%">&nbsp;</div>
+            </div>
+            <span class="progress-text">3 of 4</span>
+          </div>
+          <h2>Let's Create Your Branding Story.</h2>
+        </div>
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col">
+            <div class="question h2-lower-lineHeight">
+              <h3>Why Do You Exist?</h3>
+              <p>
+                Tell us what your <strong>purpose</strong>, your
+                <strong>vision, mission</strong> and
+                <strong>values</strong> are.
+              </p>
+            </div>
+            <div class="response">
+              <form>
+                <textarea
+                  class=""
+                  id="qa-branding-input-3"
+                  cols="30"
+                  rows="10"
+                  placeholder="Our purpose: sustainability. Our mission: empower runners for a healthier planet. Vision: reconnect humans with nature. Values: forever materials, wowing styles, natural beings. Through products like modular shoes and metaverse integration, we redefine running."
+                  aria-placeholder="Our purpose: sustainability. Our mission: empower runners for a healthier planet. Vision: reconnect humans with nature. Values: forever materials, wowing styles, natural beings. Through products like modular shoes and metaverse integration, we redefine running."
+                ></textarea>
+              </form>
+              <button
+                class="next-button w3-bar-item btn-question3 roundcorners"
+                style="height: 31px"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--UX-->
+    <section
+      id="qa-ux-1"
+      class="qa-section qa-panel qa-dark-blue roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 25%">&nbsp;</div>
+            </div>
+            <span class="progress-text">1 of 4</span>
+          </div>
+          <h2>Let's Create Your UX Story.</h2>
+        </div>
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col">
+            <div class="question h2-lower-lineHeight">
+              <h3>Who is Your Customer?</h3>
+              <p>
+                Elaborate around their <strong>needs</strong> and socio
+                <strong>demographic</strong> attributes.
+              </p>
+            </div>
+            <div class="response">
+              <form>
+                <textarea
+                  class=""
+                  id="qa-ux-input-1"
+                  cols="30"
+                  rows="10"
+                  placeholder="Emma, 28, runner. Sustainability-minded, seeks personalized running gear. Nure's modular shoes, subscription model, and metaverse integration resonate. Empowering individuality, fostering community, and promoting a healthier planet."
+                  aria-placeholder="Emma, 28, runner. Sustainability-minded, seeks personalized running gear. Nure's modular shoes, subscription model, and metaverse integration resonate. Empowering individuality, fostering community, and promoting a healthier planet."
+                ></textarea>
+              </form>
+              <button
+                class="next-button w3-bar-item btn-question1 roundcorners"
+                style="height: 31px"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="qa-ux-2"
+      class="qa-section qa-panel qa-dark-blue roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 50%">&nbsp;</div>
+            </div>
+            <span class="progress-text">2 of 4</span>
+          </div>
+          <h2>Let's Create Your UX Story.</h2>
+        </div>
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col">
+            <div class="question h2-lower-lineHeight">
+              <h3>What Experience Do You Offer?</h3>
+              <p>
+                Let us know what the <strong>key features</strong> of your
+                website or app's <strong>user experience</strong> should be.
+              </p>
+            </div>
+            <div class="response">
+              <form>
+                <textarea
+                  class=""
+                  id="qa-ux-input-2"
+                  cols="30"
+                  rows="10"
+                  placeholder="Our website need features around: Product customization, sustainability education, and a metaverse integration. Seamlessly connecting users to the community through social platform links embedding and a clear set of call to actions that for lead generation."
+                  aria-placeholder="Our website need features around: Product customization, sustainability education, and a metaverse integration. Seamlessly connecting users to the community through social platform links embedding and a clear set of call to actions that for lead generation."
+                ></textarea>
+              </form>
+              <button
+                class="next-button w3-bar-item btn-question2 roundcorners"
+                style="height: 31px"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="qa-ux-3"
+      class="qa-section qa-panel qa-dark-blue roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 75%">&nbsp;</div>
+            </div>
+            <span class="progress-text">3 of 4</span>
+          </div>
+          <h2>Let's Create Your UX Story.</h2>
+        </div>
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col">
+            <div class="question h2-lower-lineHeight">
+              <h3>Why Should a Customer Use It?</h3>
+              <p>
+                Talk about what you <strong>want to achieve</strong> by having
+                the customer use your website or app.
+              </p>
+            </div>
+            <div class="response">
+              <form>
+                <textarea
+                  class=""
+                  id="qa-ux-input-3"
+                  cols="30"
+                  rows="10"
+                  placeholder="Our website shall empowers users with personalized options, environmental insights, and community connections, driving sales and cultivating informed, eco-conscious consumers. Through education and trust, we strengthen our brand's impact."
+                  aria-placeholder="Our website shall empowers users with personalized options, environmental insights, and community connections, driving sales and cultivating informed, eco-conscious consumers. Through education and trust, we strengthen our brand's impact."
+                ></textarea>
+              </form>
+              <button
+                class="next-button w3-bar-item btn-question3 roundcorners"
+                style="height: 31px"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="qa-contacts"
+      class="qa-section qa-panel qa-darkest roundcorners"
+      style="display: none"
+    >
+      <div class="qa-section-container">
+        <div class="pre-q-msg w3-center">
+          <div class="progress-container">
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: 100%">&nbsp;</div>
+            </div>
+            <span class="progress-text">4 of 4</span>
+          </div>
+          <h2>Last but Not Least, Let's Connect.</h2>
+        </div>
+
+        <div class="question-container w3-center qa-light-gray roundcorners">
+          <div class="relative-wrapper flex-col" id="contactForm">
+            <h3>Enter Your Credentials.</h3>
+            <form
+              method="post"
+              action="https://formspree.io/f/moqgpwyj"
+              class="flex-col"
+              id="qaForm"
+              style="gap: 1rem"
+            >
+              <nav class="connect-tabs">
+                <ul
+                  style="
+                    display: inline-flex;
+                    list-style: none;
+                    padding-inline-start: 0;
+                    width: 100%;
+                    justify-content: center;
+                  "
+                >
+                  <li>
+                    <input type="button" id="tab-1" value="Startup" />
+                    <!-- <label>Startup</label> -->
+                  </li>
+                  <li>
+                    <input type="button" id="tab-2" value="Sme" />
+                    <!-- <label>Sme</label> -->
+                  </li>
+                  <li>
+                    <input type="button" id="tab-3" value="Enterprise" />
+                    <!-- <label>Enterprise</label> -->
+                  </li>
+                </ul>
+              </nav>
+              <input
+                class="contact-text-input"
+                id="qa-contacts-name"
+                type="text"
+                name="name"
+                onfocus="this.value='';"
+                placeholder="Your first and last name"
+                aria-placeholder="Your first and last name"
+              />
+              <input
+                class="contact-text-input"
+                id="qa-contacts-company"
+                type="text"
+                name="company"
+                onfocus="this.value='';"
+                placeholder="Your company's name"
+                aria-placeholder="Your company's name"
+              />
+              <input
+                class="contact-text-input"
+                id="qa-contacts-email"
+                type="email"
+                name="email"
+                onfocus="this.value='';"
+                placeholder="john@appleseed.com"
+                aria-placeholder="john@appleseed.com"
+              />
+              <input
+                type="hidden"
+                name="result"
+                value=""
+                id="qa-contacts-result"
+              />
+              <button id="btnSubmit" type="submit">Submit now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="qa-end"
+      class="w3-container w3-center w3-content qa-panel qa-light-gray roundcorners"
+      style="display: none"
+    >
+      <div class="content">
+        <img src="img/qa_complete.svg" alt="qa-complete" />
+        <h3 style="margin-top: 16px">Awesome!</h3>
+        <h3 style="margin-bottom: 16px">You will hear from us!</h3>
+        <p>This can take up to 48 hours.</p>
+      </div>
+      <button
+        id="btnClose"
+        class="btnLetsgo w3-button primary-button w3-bar-item roundcorners"
+      >
+        Close
+      </button>
+    </section>
+  </body>
+</html>
