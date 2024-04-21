@@ -329,7 +329,7 @@ h4 {
 .qa-panel {
   background-size: cover;
   background-position: center, center;
-  height: 100%;
+  height: calc(100% - 100px);
 }
 .content {
   flex: 1; /* Allows content to grow and fill available space */
