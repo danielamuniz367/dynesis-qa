@@ -661,6 +661,10 @@ h4 {
     gap: 10.5px;
   }
 
+  .response {
+    height: 100%;
+  }
+
   div#contactForm {
     justify-content: unset;
   }
@@ -871,5 +875,9 @@ h4 {
 
   #qa-ux-3 h3 {
     text-wrap: nowrap;
+  }
+
+  .qa-panel {
+    height: 100%;
   }
 }
