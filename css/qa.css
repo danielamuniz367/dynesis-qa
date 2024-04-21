@@ -266,7 +266,7 @@ h4 {
   flex-direction: column;
   flex-grow: 1;
   overflow: hidden;
-  height: 100%;
+  height: calc(100% - 100px);
 }
 
 .response form {
