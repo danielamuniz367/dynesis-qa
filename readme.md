@@ -32,9 +32,3 @@ With this in mind here's a list of needed action:
 2. **If you have a better idea than formspree, go for it**. I don't like this email solution; just went to the low hanging fruit.
 
 3. **The current js is quick and dirty: feel free to improve, if you feel inspired**. It does the job, but it could benefit from a frontender pass. Again: if you feel inspired: it's all yours :)
-
-
-# dynesis-qa
-# dynesis-qa
-# dynesis-qa
-# dynesis-qa
